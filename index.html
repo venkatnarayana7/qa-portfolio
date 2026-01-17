@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Venkata Narayana | QA Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg-grid"></div>
+<div class="bg-gradient gradient-1"></div>
+<div class="bg-gradient gradient-2"></div>
+<div class="bg-gradient gradient-3"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">VN</div>
+  <div class="nav-links">
+    <a href="#bugs" class="nav-link">Explore</a>
+    <a href="case-study.html" class="nav-link">Case Study</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="eye-container">
+    <div class="eye"><div class="pupil"></div></div>
+    <div class="eye"><div class="pupil"></div></div>
+  </div>
+
+  <div class="hero-text">
+    <div class="hero-subtitle">// Quality Assurance Engineer</div>
+    <h1 class="hero-title">Venkata Narayana</h1>
+    <p class="hero-description">
+      Exposing hidden issues before they reach production.
+      Every bug revealed is a crisis prevented.
+    </p>
+    <button class="cta-button" onclick="document.getElementById('bugs').scrollIntoView({behavior:'smooth'})">
+      <span>Discover Bugs →</span>
+    </button>
+  </div>
+</section>
+
+<!-- BUGS -->
+<section class="bugs-section" id="bugs">
+
+  <div class="cards-grid">
+
+    <div class="bug-card">
+      <div class="bug-icon">🐛</div>
+      <div class="bug-details">
+        <h3>About Me</h3>
+        <p>
+          I am <strong>Venkata Narayana</strong>, a Computer Science Engineer
+          with a tester’s mindset, focused on identifying hidden risks before
+          users are impacted.
+        </p>
+      </div>
+    </div>
+
+    <div class="bug-card">
+      <div class="bug-icon">🐛</div>
+      <div class="bug-details">
+        <h3>Skills</h3>
+        <ul>
+          <li>C++, Java, Python, Kotlin</li>
+          <li>Android Studio, Postman, Git</li>
+          <li>Manual, Exploratory, Regression Testing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bug-card">
+      <div class="bug-icon">🐛</div>
+      <div class="bug-details">
+        <h3>Projects</h3>
+        <ul>
+          <li>Online Voting System (C)</li>
+          <li>Android Food Delivery App (Kotlin)</li>
+          <li>Linux Security Research</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bug-card">
+      <div class="bug-icon">🐛</div>
+      <div class="bug-details">
+        <h3>Contact</h3>
+        <p>📧 narayanav336@gmail.com</p>
+        <button class="resume-btn" id="open-resume">View Resume</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="success-message" id="success">QUALITY APPROVED ✓</div>
+
+</section>
+
+<!-- CONTROLS -->
+<div class="controls">
+  <button class="control-btn" id="reset-btn">↻ Reset</button>
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="resume-modal">
+  <div class="modal-content">
+    <div class="modal-close" id="close-resume">✕</div>
+    <iframe src="resume.pdf"></iframe>
+  </div>
+</div>
+
+<audio id="click-sound" src="click.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
